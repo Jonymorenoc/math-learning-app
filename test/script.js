@@ -1,18 +1,23 @@
 const questions = [
     {
-        question: "🔲 ¿Cuántos vértices tiene un cubo?",
-        options: ["6", "8", "12", "4"],
-        answer: "8"
+        question: "✖️ ¿Cuánto es 4 × 3?",
+        options: ["10", "12", "14", "16"],
+        answer: "12"
     },
     {
-        question: "💰 Si tienes $120, ¿cuántas sodas puedes comprar?",
-        options: ["2", "4", "6", "8"],
-        answer: "4"
+        question: "💰 Si compras 2 jugos a $35 cada uno, ¿cuánto pagas?",
+        options: ["$70", "$65", "$75", "$80"],
+        answer: "$70"
     },
     {
-        question: "📏 ¿Cuántos mililitros tiene un litro?",
+        question: "📏 ¿Cuántos mililitros hay en 1 litro?",
         options: ["500 ml", "1000 ml", "1500 ml", "2000 ml"],
         answer: "1000 ml"
+    },
+    {
+        question: "📐 ¿Cuántas aristas tiene un cubo?",
+        options: ["6", "8", "12", "14"],
+        answer: "12"
     }
 ];
 
