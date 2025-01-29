@@ -1,37 +1,35 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modo de Estudio - Matemáticas</title>
+    <title>Study Mode - Math Fun</title>
     <link rel="stylesheet" href="../assets/styles.css">
 </head>
 <body>
-    <h1>📖 Aprende Matemáticas 📚</h1>
+    <div class="container">
+        <h1>📚 Study Mode</h1>
+        <p>Learn multiplication, money, and shapes with fun exercises!</p>
 
-    <div class="study-card">
-        <h2>✖️ Tablas de Multiplicar</h2>
-        <p>4 × 3 = <strong>12</strong> 🍏🍏🍏🍏🍏🍏🍏🍏🍏🍏🍏🍏</p>
-        <p>5 × 2 = <strong>10</strong> 🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎</p>
+        <!-- Multiplication Practice -->
+        <div class="exercise">
+            <h2>🐙 Multiplication Practice</h2>
+            <p>How much is 4 × 5?</p>
+            <button onclick="alert('✅ Correct! 4 × 5 = 20')">20</button>
+            <button onclick="alert('❌ Try again!')">15</button>
+            <button onclick="alert('❌ Try again!')">10</button>
+        </div>
+
+        <!-- Money Exercise -->
+        <div class="exercise">
+            <h2>💰 Counting Money</h2>
+            <p>If an apple costs $3, how much do 2 apples cost?</p>
+            <button onclick="alert('✅ Correct! 2 × 3 = $6')">$6</button>
+            <button onclick="alert('❌ Try again!')">$9</button>
+            <button onclick="alert('❌ Try again!')">$5</button>
+        </div>
+
+        <a href="../index.html" class="btn">🔙 Back to Menu</a>
     </div>
-
-    <div class="study-card">
-        <h2>💰 Dinero y Compras</h2>
-        <p>Si compras <strong>2 jugos</strong> a $35 cada uno, pagas:</p>
-        <p>💵 2 × 35 = <strong>$70</strong></p>
-    </div>
-
-    <div class="study-card">
-        <h2>📏 Volumen y Capacidad</h2>
-        <p>💧 <strong>1 litro = 1000 mililitros</strong>.</p>
-        <p>Si tienes 3 litros de agua, tienes: <strong>3000 ml</strong>.</p>
-    </div>
-
-    <div class="study-card">
-        <h2>📐 Geometría: Vértices y Aristas</h2>
-        <p>🔲 Un cubo tiene <strong>6 caras</strong>, <strong>12 aristas</strong>, y <strong>8 vértices</strong>.</p>
-    </div>
-
-    <a href="../index.html" class="btn">🔙 Volver al inicio</a>
 </body>
 </html>
