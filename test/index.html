@@ -3,24 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Mode - Math Fun</title>
+    <title>Test Mode</title>
     <link rel="stylesheet" href="../assets/styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>📝 Test Mode</h1>
-        <p>Answer the questions correctly to win rewards!</p>
-
-        <div class="exercise">
-            <h2>🐻 What shape has 3 sides?</h2>
-            <button onclick="checkAnswer('Triangle', 1)">Triangle</button>
-            <button onclick="checkAnswer('Circle', 1)">Circle</button>
-            <button onclick="checkAnswer('Square', 1)">Square</button>
-            <p id="feedback1"></p>
-        </div>
-
-        <a href="../index.html" class="btn">🔙 Back to Menu</a>
+        <div id="quiz"></div>
+        <button onclick="checkAnswers()">Submit Answers</button>
+        <a href="../index.html" class="btn">🏠 Back to Main Menu</a>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
