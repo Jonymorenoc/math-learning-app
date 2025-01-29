@@ -1,21 +1,23 @@
-let attempts = {};
+const questions = [
+    { question: "🐵 3 x 4 = ?", answer: "12" },
+    { question: "🐸 5 x 2 = ?", answer: "10" },
+    { question: "🐰 7 x 3 = ?", answer: "21" },
+];
 
-function checkAnswer(correct, id) {
-    if (!attempts[id]) attempts[id] = 0;
+const quizContainer = document.getElementById("quiz");
 
-    let feedback = document.getElementById("feedback" + id);
-    let userAnswer = event.target.innerText;
+questions.forEach((q, index) => {
+    quizContainer.innerHTML += `<p>${q.question} <input type="text" id="q${index}"></p>`;
+});
 
-    if (userAnswer === correct) {
-        feedback.innerHTML = "🎉 Correct! Great job! 🎈";
-        feedback.style.color = "green";
-    } else {
-        attempts[id]++;
-        if (attempts[id] >= 2) {
-            feedback.innerHTML = `❌ Incorrect. The correct answer is ${correct}.`;
+function checkAnswers() {
+    questions.forEach((q, index) => {
+        const input = document.getElementById(`q${index}`);
+        if (input.value == q.answer) {
+            input.style.color = "green";
         } else {
-            feedback.innerHTML = "❌ Try again!";
+            input.style.color = "red";
+            alert(`Incorrect! The correct answer is ${q.answer}.`);
         }
-        feedback.style.color = "red";
-    }
+    });
 }
