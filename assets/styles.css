@@ -1,43 +1,38 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Comic Sans MS', sans-serif;
     text-align: center;
-    background-color: #f8f9fa;
+    background-color: #ffebcd;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
-    color: #4a90e2;
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
-.study-card, .quiz-container {
-    background-color: #ffffff;
-    margin: 20px auto;
-    padding: 20px;
+.exercise {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f7c8ff;
     border-radius: 10px;
-    width: 80%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .btn {
-    background-color: #4a90e2;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
     display: inline-block;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-.option {
-    display: block;
-    margin: 10px auto;
-    padding: 10px;
-    background-color: #ffcc00;
-    border: none;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.option:hover {
-    background-color: #ffb700;
+    margin: 15px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    background: #ff6f61;
+    color: white;
+    border-radius: 10px;
 }
